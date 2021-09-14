@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>majaribio page</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+   max-width: 2000px;
+  margin: auto;
+  
+}
+html{background-image: url(bk.jpg);}
+
+
+
+button.hh {
+  background: #75CBDE;
+  color: white;
+  padding: 12px;
+  border-radius: 5px;
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  cursor: pointer;
+}
+
+button.hg {
+  background: #75CBDE;
+  color: white;
+  border-radius: 5px;
+  padding: 12px;
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  cursor: pointer;
+}
+button:hover{
+background-color: #46b9d2;
+
+}
+.active, .button:hover {
+  background-color: #666;
+  color: white;
+}
+
+/*.hh_facebook, .hg_facebook {
+  display: none;
+}
+
+.hh_facebook.vis, .hg_facebook.vis {
+  display: block 
+}*/
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+.hh_facebook.skjul, .hg_facebook.skjul {
+  display: none;
+}
+.content {
+  max-width: 400px;
+  margin: auto;
+  
+   background-image: linear-gradient( #e6f2ff, #FFFFFF );
+}
+.content1 {
+position: relative;
+  left: 200px;
+  max-width: 500px;
+  margin: auto;
+  padding-top: px;
+  background-image: linear-gradient( #e6f2ff, #ffffff );
+    opacity: 0.8;
+  height: 200px;
+  height: 550px;
+  border-radius: 10px ;
+}
+
+.two{
+padding-top: 20px;
+background-color:;
+
+}
+input[type=text], select {
+  width: 100%;
+  padding: 8px 16px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=password], select {
+  width: 100%;
+  padding: 8px 16px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #75CBDE;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #46b9d2;
+}
+
+
+
+
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(function(){
+    $(".hh_facebook, .hg_facebook  ").hide();
+      $(".hk_facebookhide ").show();
+      $("button.hh").on("click", function(){
+         $(".hh_facebook").show();
+         $(".hg_facebook").hide();
+          $(".hk_facebookhide").hide();
+      });
+    
+      $("button.hg").on("click", function(){
+         $(".hh_facebook").hide();
+         $(".hg_facebook").show();
+          $(".hk_facebookhide").hide();
+      });
+    });
+
+
+// Add active class to the current button (highlight it)
+var header = document.getElementById("myDIV");
+var btns = header.getElementsByClassName("button");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("active");
+  if (current.length > 0) { 
+    current[0].className = current[0].className.replace(" active", "");
+  }
+  this.className += " active";
+  });
+}
+</script>
+
+
+</script>
+</head>
+<body style="background-image: url(bk.jpg); background-repeat: no-repeat; background-size: cover;">
+
+
+<div>
+<div >
+
+<h3 style="background-color: white; padding:9px; background-color: #75CBDE;">
+
+
+<span style="font-size:30px;cursor:pointer; padding-left: 12px;" onclick="openNav()">&#9776;
+  <span style="float:right; padding-right: 200px;"><i class="fa fa-shopping-cart" style="font-size:36px"></i></span>
+</span>
+
+DOBI</h3>
+
+
+
+</div>
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+<div class="two" >
+  
+    
+<div style="display:inline-block;position: relative;
+  left: 200px; padding-top: 70px;">
+  <img src="pk.jpg" style="width:400px;">
+</div>
+
+<div style="display:inline-block; text-align: center; position: relative;
+  left: 150px;">
+<div id="myDIV" style="display: inline-block; position:relative; left:200px;" ><button class="hh">LOGIN</button><button class="hg">REGISTER</button></div>
+  
+<div class="content1">
+
+<div class="hh_facebook">
+  <div class="content">
+<form>
+
+        <div class="container">
+          <h2 style="padding-top:px;">Login Page</h2><br>
+
+            <!-- <label>Username : </label> -->
+            <input type="text" placeholder="Enter Username" name="username" required>
+            <!-- <label>Password : </label> -->
+            <input type="password" placeholder="Enter User Password" name="password" required>
+            <input type="checkbox" style="display: inline-block;"checked="checked"> Remember me
+            <!-- <button type="button" class="cancelbtn"> Cancel</button> -->
+             <a  style="color:#75CBDE; display: inline-block; float: right;" href="#"> <b>Forgot password? </b></a>
+             <div style="padding-top: 40px;">
+            <input type="submit" value="Submit">
+          </div>
+
+
+        </div>
+    </form>
+</div>
+
+ </div>
+
+<div class="hg_facebook">
+   <div class="content">
+ <form>  
+        <div class="container">  
+          <h2 style="padding-top:px;">Register Page</h2><br>
+
+            <!-- <label>Username : </label> -->   
+            <input type="text" placeholder="First name" name="Fname" required>
+            <input type="text" placeholder="Last name" name="Lname" required> <input type="text" placeholder="Enter Username" name="username" required>
+            <input type="text" placeholder="Phone contact" name="Pcontact" required> 
+            <input type="text" placeholder="email" name="email" required>
+            <!-- <label>Password : </label> -->  
+            <input type="password" placeholder="New User Password" name="password" required>
+            <input type="password" placeholder="Confirm User Password" name="password" required>
+            <input type="checkbox" style="display: inline-block;"checked="checked"> Remember me
+            <!-- <button type="button" class="cancelbtn"> Cancel</button> -->
+             <a  style="color:#75CBDE; display: inline-block; float: right;" href="#"> <b>Forgot password? </b></a> 
+
+            <input type="submit" value="Submit">
+        </div>   
+    </form> 
+</div>
+
+</div>
+
+<div class="hk_facebookhide">
+<form>
+         <div class="content">
+        <div class="container">
+          <h2 style="padding-top:;">Login Page</h2><br>
+
+            <!-- <label>Username : </label> -->
+            <input type="text" placeholder="Enter Username" name="username" required>
+            <!-- <label>Password : </label> -->
+            <input type="password" placeholder="Enter User Password" name="password" required>
+
+            
+
+            <input type="checkbox" style="display: inline-block;"checked="checked"> Remember me
+            <!-- <button type="button" class="cancelbtn"> Cancel</button> -->
+             <a  style="color:#75CBDE; display: inline-block; float: right;" href="#"> <b>Forgot password? </b></a>
+            <div style="padding-top: 40px;">
+             <input type="submit" value="Submit">
+           </div>
+
+
+
+        </div>
+      </div>
+      </div>
+    </form>
+  </div>
+</div>
+</div>
+
+
+</div>
+</body>
+</html>
